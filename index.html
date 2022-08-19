@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
     <!-- Icons Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- Styles -->
-    <style>
-      @media(min-width: 768px){
-          .height{
-              height: 100vh;
-          }
-      }
-    </style>
     <!-- Ttile -->
-    <title>Scroll web</title>
+    <title>Scroll web Bootstrap practice</title>
   </head>
-  <body>
+  <body 
+  class="position: relative"
+  data-bs-spy="scroll" 
+  data-bs-target="#navbar" 
+  data-bs-root-margin="0px 0px -40%" 
+  data-bs-smooth-scroll="true" 
+  class="scrollspy-example bg-light p-3 rounded-2" 
+  tabindex="0"
+  >
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
           <i class="bi bi-bookmark"></i>
-          <span class="pe-1">Navbar</span>
+          <span class="pe-1">Bootstrap practice</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarbtn" aria-controls="navbarbtn" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarbtn">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
@@ -256,6 +256,11 @@
       </div>
     </section>
     <!-- Suscribe -->
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-center text-light py-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nostrum beatae asperiores tempora excepturi fuga voluptates atque earum eligendi pariatur vitae expedita iusto maxime qui repellat sapiente, repellendus provident tenetur!</p>
+    </footer>
+    <!-- Footer -->
     <!-- Modal 1 -->
     <div class="modal fade" id="ModalLabel1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
       <div class="modal-dialog">
