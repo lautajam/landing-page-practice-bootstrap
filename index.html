@@ -4,12 +4,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
-
+    <!-- Icons Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    
+    <!-- Styles -->
+    <style>
+      @media(min-width: 768px){
+          .height{
+              height: 100vh;
+          }
+      }
+    </style>
+    <!-- Ttile -->
     <title>Scroll web</title>
   </head>
   <body>
@@ -68,13 +75,12 @@
     </section>
     <!-- Slider -->
     <!-- Services -->
-    <main class="bg-dark text-white py-5" id="services">
+    <main id="services" class="bg-dark text-white py-4">
       <div class="container">
         <div class="text-center pb-3">
-          <i class="bi bi-lightning h4"></i>
-          <i class="bi bi-lightning h4"></i>
-          <i class="bi bi-lightning h4"></i>
-          <i class="bi bi-lightning h4"></i>
+          <i class="bi bi-lightning h3"></i>
+          <i class="bi bi-lightning h3"></i>
+          <i class="bi bi-lightning h3"></i>
         </div>
         <h2 class="text-center display-4 mb-4">Services</h2>
         <div class="row align-items-center">
@@ -90,7 +96,7 @@
             <img src="resources/services-1.jpg" alt="" class="img-fluid rounded">
           </div>
         </div>
-        <h1 class="py-4 display-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ipsa ad quia saepe magnam, eum deleniti officiis? Officia iste inventore, quos laborum aut dolore minima quasi magni? Deleniti, recusandae tempora!</h1>
+        <h1 class="py-4 display-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ipsaa d quia saepe magnam, eum deleniti officiis? Officia iste inventore, quos laborum aut dolore minima quasi magni? Deleniti, recusandae tempora!</h1>
       </div>
     </main>
     <!-- Services -->
@@ -98,9 +104,9 @@
     <section id="comments" class="py-4 bg-light">
       <div class="container">
         <div class="text-center pb-2">
-          <i class="bi bi-chat-quote h4"></i>
-          <i class="bi bi-chat-quote h4"></i>
-          <i class="bi bi-chat-quote h4"></i>
+          <i class="bi bi-chat-quote h3"></i>
+          <i class="bi bi-chat-quote h3"></i>
+          <i class="bi bi-chat-quote h3"></i>
         </div>
         <h2 class="text-center display-4 mb-4">Comments</h2>
         <p class="Lead mb-4 text-center">
@@ -155,73 +161,158 @@
     </section>
     <!-- Comments -->
     <!-- Suscribe -->
-    <div class="container text-center d-flex flex-column height justify-content-center" id="suscribe">
-      <h1 class="display-4 mb-4">Lista de precios</h1>
-      <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit nihil ea commodi error inventore vitae? Accusantium, aut aliquid provident magnam numquam nesciunt esse quam vitae ex. Qui, et cumque!</p>
-      <div class="row mt-2">
-        <article class="col-12 col-md-4 mb-5 mb-md-0">
-          <div class="border border-3 border-dark rounded">
-              <p class="mt-5">Basic</p>
-              <h2 class="display-3">$100</h2>
-              <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
+    <section id="suscribe" class="bg-secondary text-light py-3">
+      <div class="container">
+        <div class="text-center h1">
+          <i class="bi bi-credit-card h3"></i>
+          <i class="bi bi-credit-card h3"></i>
+          <i class="bi bi-credit-card h3"></i>
+        </div>
+        <h2 class="text-center display-4 mb-3">Suscribe</h2>
+        <p class="lead text-center pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum cumque, fugit error, harum ipsam quae exercitationem officiis cupiditate aperiam reiciendis? Earum quos, eos reiciendis rerum incidunt praesentium veniam iure.</p>
+        <div class="row text-dark">
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <p class="mt-5 fw-semibold">Basic</p>
+                <h2 class="display-3">$100</h2>
+                <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
+              </div>
               <ul class="list-unstyled my-4 text-end ps-2">
-                  <li>✔️ Lorem, ipsum dolor.</li>
-                  <li>✔️ Lorem ipsum dolor sit amet.</li>
-                  <li>✔️ Lorem ipsum dolor facere.</li>
-                  <li class="text-decoration-line-through">❌ Lorem ipsum, dolor sit amet consectetur.</li>
-                  <li class="text-decoration-line-through">❌ Lorem, ipsum.</li>
-                  <li class="text-decoration-line-through">❌ Lorem ipsum dolor sit amet adipisicing.</li>
-                  <li class="text-decoration-line-through">❌ Lorem ipsum dolor sit.</li>
-                  <li class="text-decoration-line-through">❌ Lorem ipsum dolor sit amet reprehenderit.</li>
-                  <li class="text-decoration-line-through">❌ Lorem, ipsum quo.</li>
+                <li> Lorem, ipsum dolor.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor facere.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem ipsum, dolor sit amet consectetur.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem, ipsum.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem ipsum dolor sit amet adipisicing.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem ipsum dolor sit.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem ipsum dolor sit amet reprehenderit.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem, ipsum quo.</li>
               </ul>
-              <a href="#" class="bg-info text-white d-block py-2 text-decoration-none">Acceder</a>
+              <div class="card-body">
+                <button
+                type="button" 
+                class="btn btn-outline-dark" 
+                data-bs-toggle="modal" 
+                data-bs-target="#ModalLabel1">Suscribe</button>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="col-12 col-md-4 mb-5 mb-md-0">
-          <div class="border border-3 border-dark rounded bg-dark text-white">
-              <p class="mt-5 fw-semibold">Pro</p>
-              <h2 class="display-3">$200</h2>
-              <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <p class="mt-5 fw-semibold">Pro</p>
+                <h2 class="display-3">$200</h2>
+                <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
+              </div>
               <ul class="list-unstyled my-4 text-end ps-2">
-                  <li>✔️ Lorem, ipsum dolor.</li>
-                  <li>✔️ Lorem ipsum dolor sit amet.</li>
-                  <li>✔️ Lorem ipsum dolor facere.</li>
-                  <li>✔️ Lorem ipsum, dolor sit amet consectetur.</li>
-                  <li>✔️ Lorem, ipsum.</li>
-                  <li>✔️ Lorem ipsum dolor sit amet adipisicing.</li>
-                  <li class="text-decoration-line-through">❌ Lorem ipsum dolor sit.</li>
-                  <li class="text-decoration-line-through">❌ Lorem ipsum dolor sit amet reprehenderit.</li>
-                  <li class="text-decoration-line-through">❌ Lorem, ipsum quo.</li>
+                <li> Lorem, ipsum dolor.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor facere.</li>
+                <li> Lorem ipsum, dolor sit amet consectetur.</li>
+                <li> Lorem, ipsum.</li>
+                <li> Lorem ipsum dolor sit amet adipisicing.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem ipsum dolor sit.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem ipsum dolor sit amet reprehenderit.</li>
+                <li class="text-decoration-line-through text-danger"> Lorem, ipsum quo.</li>
               </ul>
-              <a href="#" class="bg-secondary text-white d-block py-2 text-decoration-none">Acceder</a>
+              <div class="card-body">
+                <button
+                type="button" 
+                class="btn btn-outline-dark" 
+                data-bs-toggle="modal" 
+                data-bs-target="#ModalLabel2">Suscribe</button>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="col-12 col-md-4 mb-4">
-          <div class="border border-3 border-dark bg-warning rounded">
-              <p class="mt-5 fw-bold text-decoration-underline">Executive</p>
-              <h2 class="display-3 fw-bold">$500</h2>
-              <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <p class="mt-5 fw-semibold">Execitove</p>
+                <h2 class="display-3">$500</h2>
+                <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
+              </div>
               <ul class="list-unstyled my-4 text-end ps-2">
-                  <li>✔️ Lorem, ipsum dolor.</li>
-                  <li>✔️ Lorem ipsum dolor sit amet.</li>
-                  <li>✔️ Lorem ipsum dolor facere.</li>
-                  <li>✔️ Lorem ipsum, dolor sit amet consectetur.</li>
-                  <li>✔️ Lorem, ipsum.</li>
-                  <li>✔️ Lorem ipsum dolor sit amet adipisicing.</li>
-                  <li>✔️ Lorem ipsum dolor sit.</li>
-                  <li>✔️ Lorem ipsum dolor sit amet reprehenderit.</li>
-                  <li>✔️ Lorem, ipsum quo.</li>
+                <li> Lorem, ipsum dolor.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor facere.</li>
+                <li> Lorem ipsum, dolor sit amet consectetur.</li>
+                <li> Lorem, ipsum.</li>
+                <li> Lorem ipsum dolor sit amet adipisicing.</li>
+                <li> Lorem ipsum dolor sit.</li>
+                <li> Lorem ipsum dolor sit amet reprehenderit.</li>
+                <li> Lorem, ipsum quo.</li>
               </ul>
-              <a href="#" class="bg-dark text-white d-block py-2 text-decoration-none">Acceder</a>
+              <div class="card-body">
+                <button
+                type="button" 
+                class="btn btn-outline-dark" 
+                data-bs-toggle="modal" 
+                data-bs-target="#ModalLabel3">Suscribe</button>
+              </div>
+            </div>
           </div>
-        </article>
+        </div>
       </div>
-      <footer>
-        <p class="fs-6 lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit ©</p>
-      </footer>
-    </div>
+    </section>
     <!-- Suscribe -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="ModalLabel1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel1">Basic</h5>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur <strong>$100</strong> adipisicing elit. Illum, vero harum? Ratione ducimus distinctio laudantium inventore facilis nesciunt tenetur. Cupiditate esse officia perferendis eos aperiam molestiae possimus quam accusantium exercitationem.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Suscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 1 -->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="ModalLabel2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel2">Pro</h5>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum, dolor sit amet consectetur <strong>$200</strong> adipisicing elit. Magni officia maxime a velit nihil repellendus doloremque blanditiis architecto? Commodi consectetur, nisi quibusdam quisquam animi vitae eligendi. Omnis quod quam molestiae.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Suscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <!-- Modal 3 -->
+    <div class="modal fade" id="ModalLabel3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel3">Executive</h5>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur <strong>$500</strong> adipisicing elit. Impedit, placeat culpa repellendus eaque adipisci blanditiis molestiae ullam inventore ex nesciunt provident consequatur sit. Debitis natus molestias quisquam minima quidem. Nihil!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" 
+            data-bs-dismiss="modal">Suscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
   </body>
 </html>
