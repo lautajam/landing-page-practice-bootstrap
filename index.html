@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Icons Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Ttile -->
@@ -30,7 +30,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarbtn">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
@@ -62,11 +62,11 @@
             <img src="resources/slider-3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -88,8 +88,10 @@
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolores quas sunt quasi incidunt nulla et ipsa? Sed excepturi obcaecati doloremque blanditiis cum unde aspernatur iste! Molestiae adipisci voluptatibus asperiores?</p>
             <button
-            class="btn btn-outline-light mb-3 mb-lg-0"
-            >Suscribe</button>
+                type="button" 
+                class="btn btn-outline-light mb-3 mb-lg-0" 
+                data-bs-toggle="modal" 
+                data-bs-target="#ModalLabelNewsletter">Subscribe to our newsletter</button>
           </div>
           <div class="col-12 col-lg-8">
             <img src="resources/services-1.jpg" alt="" class="img-fluid rounded">
@@ -177,7 +179,7 @@
                 <h2 class="display-3">$100</h2>
                 <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
               </div>
-              <ul class="list-unstyled my-4 text-end ps-2">
+              <ul class="list-unstyled my-4 text-start ps-2">
                 <li> Lorem, ipsum dolor.</li>
                 <li> Lorem ipsum dolor sit amet.</li>
                 <li> Lorem ipsum dolor facere.</li>
@@ -193,7 +195,7 @@
                 type="button" 
                 class="btn btn-outline-dark" 
                 data-bs-toggle="modal" 
-                data-bs-target="#ModalLabel1">Suscribe</button>
+                data-bs-target="#ModalLabelBasic">Suscribe</button>
               </div>
             </div>
           </div>
@@ -204,7 +206,7 @@
                 <h2 class="display-3">$200</h2>
                 <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
               </div>
-              <ul class="list-unstyled my-4 text-end ps-2">
+              <ul class="list-unstyled my-4 text-start ps-2">
                 <li> Lorem, ipsum dolor.</li>
                 <li> Lorem ipsum dolor sit amet.</li>
                 <li> Lorem ipsum dolor facere.</li>
@@ -220,18 +222,18 @@
                 type="button" 
                 class="btn btn-outline-dark" 
                 data-bs-toggle="modal" 
-                data-bs-target="#ModalLabel2">Suscribe</button>
+                data-bs-target="#ModalLabelPro">Suscribe</button>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 mb-3">
             <div class="card text-center">
               <div class="card-body">
-                <p class="mt-5 fw-semibold">Execitove</p>
+                <p class="mt-5 fw-semibold">Executive</p>
                 <h2 class="display-3">$500</h2>
                 <p class="font-monospace mt-3">Lorem ipsum dolor sit amet.</p>
               </div>
-              <ul class="list-unstyled my-4 text-end ps-2">
+              <ul class="list-unstyled my-4 text-start ps-2">
                 <li> Lorem, ipsum dolor.</li>
                 <li> Lorem ipsum dolor sit amet.</li>
                 <li> Lorem ipsum dolor facere.</li>
@@ -247,7 +249,7 @@
                 type="button" 
                 class="btn btn-outline-dark" 
                 data-bs-toggle="modal" 
-                data-bs-target="#ModalLabel3">Suscribe</button>
+                data-bs-target="#ModalLabelExecutive">Suscribe</button>
               </div>
             </div>
           </div>
@@ -260,12 +262,32 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nostrum beatae asperiores tempora excepturi fuga voluptates atque earum eligendi pariatur vitae expedita iusto maxime qui repellat sapiente, repellendus provident tenetur!</p>
     </footer>
     <!-- Footer -->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="ModalLabel1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+    <!-- Modal Newsletter -->
+    <div class="modal fade" id="ModalLabelNewsletter" tabindex="-1" aria-labelledby="ModalLabelNewsletter" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ModalLabel1">Basic</h5>
+            <h5 class="modal-title" id="ModalLabelNewsletter">Newsletter</h5>
+            <button type="button" class="btn-close text-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit.</strong> Impedit, placeat culpa repellendus eaque adipisci blanditiis molestiae ullam inventore ex nesciunt provident consequatur sit. Debitis natus molestias quisquam minima quidem. Nihil!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" 
+            data-bs-dismiss="modal">Suscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Newsletter -->
+    <!-- Modal Basic -->
+    <div class="modal fade" id="ModalLabelBasic" tabindex="-1" aria-labelledby="ModalLabelBasic" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabelBasic">Basic</h5>
           </div>
           <div class="modal-body">
             <p>Lorem ipsum dolor sit amet consectetur <strong>$100</strong> adipisicing elit. Illum, vero harum? Ratione ducimus distinctio laudantium inventore facilis nesciunt tenetur. Cupiditate esse officia perferendis eos aperiam molestiae possimus quam accusantium exercitationem.</p>
@@ -277,13 +299,13 @@
         </div>
       </div>
     </div>
-    <!-- Modal 1 -->
-    <!-- Modal 2 -->
-    <div class="modal fade" id="ModalLabel2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+    <!-- Modal Basic -->
+    <!-- Modal Pro -->
+    <div class="modal fade" id="ModalLabelPro" tabindex="-1" aria-labelledby="ModalLabelPro" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ModalLabel2">Pro</h5>
+            <h5 class="modal-title" id="ModalLabelPro">Pro</h5>
           </div>
           <div class="modal-body">
             <p>Lorem ipsum, dolor sit amet consectetur <strong>$200</strong> adipisicing elit. Magni officia maxime a velit nihil repellendus doloremque blanditiis architecto? Commodi consectetur, nisi quibusdam quisquam animi vitae eligendi. Omnis quod quam molestiae.</p>
@@ -295,13 +317,13 @@
         </div>
       </div>
     </div>
-    <!-- Modal 2 -->
-    <!-- Modal 3 -->
-    <div class="modal fade" id="ModalLabel3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+    <!-- Modal Pro -->
+    <!-- Modal Executive -->
+    <div class="modal fade" id="ModalLabelExecutive" tabindex="-1" aria-labelledby="ModalLabelExecutive" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ModalLabel3">Executive</h5>
+            <h5 class="modal-title" id="ModalLabelExecutive">Executive</h5>
           </div>
           <div class="modal-body">
             Lorem ipsum dolor sit amet consectetur <strong>$500</strong> adipisicing elit. Impedit, placeat culpa repellendus eaque adipisci blanditiis molestiae ullam inventore ex nesciunt provident consequatur sit. Debitis natus molestias quisquam minima quidem. Nihil!
@@ -314,9 +336,10 @@
         </div>
       </div>
     </div>
-    <!-- Modal 3 -->
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    <!-- Modal Executive -->
+    <!-- Bootstrap Script JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Bootstrap Script JS -->
     </script>
   </body>
 </html>
